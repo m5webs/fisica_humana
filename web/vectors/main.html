@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+Página Principal (óptica)
+~ Martín Sánchez Signorini
+-->
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../webstyle.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <style>
+            circle:hover {
+                cursor: move;
+            }
+        </style>
+    </head>
+    
+    <body onload="init()">
+        <div id="top">
+            <a href="../index/index.html" class="mright"><i class="fa fa-angle-double-left"></i><i class="m"> Página principal</i></a>
+            <hr>
+            <h1>Vectores</h1>
+        </div>
+        <div id="mid">
+            <div>
+                <img src="img/vector_representation.png">
+            </div>
+            <p>
+                Los <a href="https://es.wikipedia.org/wiki/Vector" target="_blank"><b>vectores</b></a>, en física, son magnitudes físicas definidas en un
+                sistema de referencia, compuestas de
+                <a href="#mod">módulo</a>,
+                <a href="#dir">dirección</a> y
+                <a href="#snt">sentido</a>.
+                Algunos ejemplos de magnitudes físicas que se definen mediante vectores son la
+                <a href="https://es.wikipedia.org/wiki/Velocidad" target="_blank">velocidad</a>, las
+                <a href="https://es.wikipedia.org/wiki/Fuerza" target="_blank">fuerzas</a>, e incluso el
+                <a href="https://es.wikipedia.org/wiki/Desplazamiento_(vector)" target="_blank">desplazamiento</a>.
+            </p>
+            <p>
+                Un vector está compuesto de tres propiedades fundamentales, el módulo o longitud, la dirección, y el sentido
+                u orientación; a grandes rasgos, un vector es una flecha. Un vector también posee un punto inicial (origen) y otro final
+                (extremo), representados como A y B respectivamente en el gráfico de arriba.
+            </p>
+            <div id="mod">
+                <h2>Módulo</h2>
+                <p>
+                    El <a href="https://es.wikipedia.org/wiki/M%C3%B3dulo_(vector)" target="_blank"><b>módulo</b></a> de un vector hace
+                    referencia a la distancia entre su origen y extremo. El módulo representa cuantitativamente al vector. Puede simbolizar
+                    cuánto vale una fuerza o a qué velocidad va un cuerpo.
+                </p>
+                <p>
+                    Para calcular un módulo en sistema de coordenadas cartesianas, se emplean los componentes del vector y se aplica el
+                    <a href="https://es.wikipedia.org/wiki/Teorema_de_Pit%C3%A1goras" target="_blank" title="Pity para los amigos">Teorema de Pitágoras</a>.
+                    Se hace la raíza cuadrada de la suma de los cuadrados de los componentes del vector, y <i>voilà</i>, ya tenemos el módulo.
+                </p>
+                <div class="half">
+                    <img src="img/module_formula.jpg">
+                </div>
+            </div>
+            <div id="dir">
+                <h2>Dirección</h2>
+                <p>
+                    La <a href="https://es.wikipedia.org/wiki/Direcci%C3%B3n_(geometr%C3%ADa)" target="_blank"><b>dirección</b></a> de un vector
+                    se refiere a la recta imaginaria en la que se apoya el vector. La dirección, es por tanto una línea infinita, la cual
+                    nos permite saber puntos de aplicación y la dirección de un cuerpo en movimiento.
+                </p>
+                <div class="half">
+                    <img src="img/vector_attrs.png">
+                </div>
+            </div>
+            <div id="snt">
+                <h2>Sentido</h2>
+                <p>
+                    El <a href="https://es.wikipedia.org/wiki/Orientaci%C3%B3n_(geometr%C3%ADa)" target="_blank"><b>sentido</b></a> u orientación
+                    de un vector se necesita para designar cual es el extremo y el origen. Gracias al sentido, junto a la dirección, podemos
+                    saber hacia dónde se dirige una velocidad o una fuerza. Invirtiendo extremo y origen, cambiamos el sentido del vector.
+                </p>
+                <div>
+                    <p>Ejemplo del cálculo de la distancia entre dos puntos:</p>
+                    <svg id="svg_module" style="background-color: white;"></svg>
+                    <script src="scripts/vectors.js" type="text/javascript"></script>
+                    <p id="dist">Distancia: </p>
+                    <p id="p1">X1: Y1:</p>
+                    <p id="p2">X2: Y2:</p>
+                </div>
+            </div>
+            <div>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+

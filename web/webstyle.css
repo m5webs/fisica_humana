@@ -1,0 +1,53 @@
+body {
+    margin: 0 auto;
+    width: 960px;
+    font-family: Georgia, serif;
+    color: #4f4f4f;
+}
+
+h1 {
+    font-size: 43px;
+    font-weight: 300;
+    margin: 0;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+a {
+    color: violet;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+
+    a:hover {
+        color: darkviolet;
+    }
+
+img {
+    width: 100%;
+}
+
+/*  IDS
+*/
+
+#top {
+    padding-top: 20px;
+}
+
+/*  CLASSES
+*/
+
+.half {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.m {
+    transition: all 0s, margin 1s;
+}
+.mright:hover .m {
+    margin: 0 0 0 30px;
+}
