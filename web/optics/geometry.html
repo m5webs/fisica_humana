@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../webstyle.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <style>
+            .moveable {
+                cursor: move;
+            }
+        </style>
+    </head>
+    
+    <body onload="init()">
+        <div id="top">
+            <a href="../index/index.html" class="mright"><i class="fa fa-angle-double-left"></i><i class="m"> Página principal</i></a>
+            <hr>
+            <h1>Óptica Geométrica</h1>
+        </div>
+        <div id="mid">
+            <div>
+                <svg id="lensesSVG"></svg>
+                <script src="scripts/lenses.js"></script>
+            </div>
+            <p>
+                La <a href="https://es.wikipedia.org/wiki/%C3%93ptica_geom%C3%A9trica" target="_blank"><b>óptica geométrica</b></a> 
+                estudia, mediante leyes geométricas, los cambios de dirección que experimentan los rayos de luz dentro de un
+                sistema óptico.
+            </p>
+            <p>
+                En el diagrama superior puedes ir modificando la posición de las distintas partes de un pequeño
+                sistema formado por una lente delgada. Pasa el ratón por encima de los elementos para ver cuáles son.
+            </p>
+            <p>
+                
+            </p>
+            <div>
+                <h2>Elementos del Sistema Óptico</h2>
+                <p>
+                    Las lentes delgadas constan de diversas partes. En primer lugar pueden ser
+                    <a href="http://webs.um.es/jmz/DiseGrafSimula/alumnos_08_09/morales/lente_convergente.html" target="_blank">convergentes</a> o
+                    <a href="http://webs.um.es/jmz/DiseGrafSimula/alumnos_08_09/morales/lente_divergente.html" target="_blank">divergentes</a>, es decir
+                    cóncavas o convexas.
+                </p>
+                <p style="margin-bottom: 0;">
+                    Ante la lente se sitúa, sobre el <b>eje</b>, el <b>objeto</b> (y) que dará lugar a una <b>imagen</b> (y').
+                </p>
+                <p style="margin-bottom: 0;">
+                    La <b>lente</b> se sitúa en el <b>punto origen</b> (O).
+                </p>
+                <p style="margin-bottom: 0;">
+                    El <b>foco objeto</b> (F) es un punto determinado por el tipo de lente.
+                    El <b>foco imagen</b> (F') es el simétrico al foco imagen respecto a la lente.
+                </p>
+                <p style="margin-bottom: 0;">
+                    La <b>distancia objeto</b> (s) es la distancia desde el origen al objeto.
+                    Desde el origen a la imagen es la <b>distancia imagen</b> (s').
+                </p>
+                <p>
+                    La <b>distancia al foco objeto</b> (f) es la distancia desde el origen hasta el foco objeto,
+                    y desde el origen a hasta el foco imagen tenemos la <b>distancia foco imagen</b> (f').
+                </p>
+                <div class="half">
+                    <img src="img/elements_optic_system.jpg">
+                </div>
+            </div>
+            <div>
+                <h2>Ecuaciones de Lentes Delgadas</h2>
+                <p>
+                    Existen diversas fórmulas empleadas en el estudio de lentes delgadas, aunque principalmente destacan
+                    la <b>fórmula de Gauss para lentes delgadas</b> y la definición de <b>aumento lateral</b>.
+                </p>
+                <div class="half">
+                    <img src="img/gauss_formula.JPG">
+                </div>
+                <div class="half">
+                    <img src="img/aumento_lateral.gif">
+                </div>
+            </div>
+            <div>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+
