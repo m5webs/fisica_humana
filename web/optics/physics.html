@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Óptica - Física</title>
+        <title>Óptica Física</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="../../img/icono.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../webstyle.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
     </head>
     
     <body onload="init()">
         <div id="top">
-            <a href="../../index.html" class="mright"><i class="fa fa-angle-double-left"></i><i class="m"> Página principal</i></a>
+            <a href="main.html" class="mright"><i class="fa fa-angle-double-left"></i><i class="m"> Óptica</i></a>
             <hr>
-            <h1>Óptica</h1>
+            <h1>Óptica Física</h1>
         </div>
         <div id="mid">
             <div>
-                <img src="img/schema_microscopio.png">
+                <svg id="refrSVG"></svg>
+                <div id="slides"></div>
+                <script src="scripts/refraction.js" type="text/javascript"></script>
             </div>
             <p>
-                La <a href="https://es.wikipedia.org/wiki/%C3%93ptica" target="_blank"><b>óptica</b></a>, 
-                es una rama de la física encargada del estudio del comportamiento de la luz dentro de determinados sistemas.
-                Algunos ejemplos de aplicaciones de la óptica en determinadas herramientas tecnológicas son las
-                <a href="https://es.wikipedia.org/wiki/Lente" target="_blank">lentes</a>, los
-                <a href="https://es.wikipedia.org/wiki/Microscopio" target="_blank">microscopios</a>, o los
-                <a href="https://es.wikipedia.org/wiki/Telescopio" target="_blank">telescopios</a>.
+                La <a href="https://en.wikipedia.org/wiki/Physical_optics" target="_blank"><b>óptica física</b></a>, 
+                es una rama de la óptica que estudia los sucesos de difracción y polarización de la luz, así como el
+                movimiento de rayos luminosos causado por diferencia en su velocidad al atravesar distintos medios.
             </p>
             <p>
-                Dentro de la óptica cabe destacar dos ramas principales en física: la óptica geométrica, relacionada con diagramas
-                de rayos como el mostrado arriba; y la óptica física, relacionada con el efecto de los índices de refracción.
+                Dentro de la óptica física cabe destacar dos sucesos fundamentales, la
+                <a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_de_la_luz" target="_blank">reflexión</a>y la
+                <a href="https://es.wikipedia.org/wiki/Refracci%C3%B3n" target="_blank">refracción</a> de la luz.
             </p>
             <div>
-                <h2>Geometría</h2>
+                <h2>Reflexión</h2>
                 <p>
-                    La <a href="https://es.wikipedia.org/wiki/%C3%93ptica_geom%C3%A9trica" target="_blank"><b>óptica geométrica</b></a> 
-                    se basa en el estudio de la trayectoria que siguen los rayos de luz en un determinado sistema óptico, principalmente
-                    para la formación de imágenes mediante el empleo de lentes.
+                    La reflexión de la luz se basa en dos principios. La primera ley de la reflexión estipula que el 
+                    <b>rayo incidente</b>, el <b>rayo reflejado</b> y la <b>normal</b> de la superficie pertenecen al <b>mismo plano</b>.
+                </p>
+                <p>
+                    La segunda ley de la reflexión indica que el <b>ángulo de incidencia</b> es igual al <b>ángulo de reflexión</b>.
                 </p>
                 <div class="half">
-                    <img src="img/lentes_types.png">
+                    <img src="img/reflexion.png">
                 </div>
             </div>
             <div>
-                <h2>Física</h2>
+                <h2>Refracción</h2>
                 <p>
-                    La <a href="https://es.wikipedia.org/wiki/F%C3%ADsica_%C3%B3ptica" target="_blank"><b>óptica física</b></a>
-                    trata sobre el estudio de las 
-                    <a href="https://es.wikipedia.org/wiki/Radiaci%C3%B3n_electromagn%C3%A9tica" target="_blank">ondas electromagnéticas</a>
-                    y de cómo se ven afectadas en los distintos medios, mediante los fenómenos de refracción y reflexión, así como la Ley de
-                    Snell. Esta física estudia el movimiento de la luz a través de prismas y láminas principalmente.
+                    La refracción de la luz se basa en dos principios. La primera ley de la refracción estipula que el 
+                    <b>rayo incidente</b>, el <b>rayo reflejado</b> y el <b>refractado</b> pertenecen al <b>mismo plano</b>.
                 </p>
-                <div class="half">
-                    <img src="img/electromagnetic_wave.png">
-                </div>
+                <p>
+                    Además podemos aplicar la <b>Ley de Snell</b>, la cual relaciona el ángulo de incidencia con el ángulo de
+                    refracción en función de los <b>índices de refracción</b> de los dos medios.
+                </p>
+                <br>
                 <div>
-                    
+                    <img src="img/refraccion.svg">
                 </div>
             </div>
             <div>

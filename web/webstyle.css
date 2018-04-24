@@ -52,3 +52,7 @@ img {
 .mright:hover .m {
     margin: 0 0 0 30px;
 }
+
+.moveable {
+    cursor: move;
+}
